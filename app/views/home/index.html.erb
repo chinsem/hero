@@ -1,2 +1,51 @@
-<h1>Hello world</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><li> <%= link_to 'Click Here To Generate A New Superhero', root_path %></li></h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <br/>
+     <div class="col-md-4"> 
+    
+    <img src="<%= @avatar %>" >
+    
+    </div>
+    <div class="col-md-4"> 
+ <h3> Your Superhero Name:<br/>
+ <span class="red"> <%= @hero_name %></span>
+  
+  </h3><br/>
+  
+  <h3>Your Superhero Power:<br/>
+  <span class="red"> <%= @hero_power %></span><br/><br/>
+  </h3>
+  
+  <h4>Your Undercover Day Job is: <br/>
+  <span class="corp_red"><%= @corp_title %></span> <br/>
+  </h4>
+  
+  <h4>Your Corporate Superpower is :<br/>
+  <span class="corp_red"><%= @corp_power %></span>
+  
+  </h4>
+  </div>
+  <div class="col-md-4"> 
+  
+  </div>
+  
+  
+  </div>
+  
+  
+  
+    
+    
+  </div>
+   <div class="panel-footer"> <li> <%= link_to 'Create A Whole Superhero Team', home_team_path %></li> </div></div>
+</div>
+
+
+  
+       
+
+
